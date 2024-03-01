@@ -9,6 +9,9 @@ https://docs.djangoproject.com/en/5.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
+# admin name: admin
+# password: postgresDB4781mmK1
+
 
 from pathlib import Path
 
@@ -39,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     'apps.main',
+    'apps.about'
 ]
 
 MIDDLEWARE = [
@@ -78,8 +82,8 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "devblogx86",
-        "USER": "devblogx86_user",
+        "NAME": "shopx86",
+        "USER": "postgres",
         "PASSWORD": "1234",
         "HOST": "127.0.0.1",
         "PORT": "5432",
